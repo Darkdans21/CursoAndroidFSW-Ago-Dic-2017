@@ -1,0 +1,171 @@
+
+Introducción Ejercicios Generales
+
+1. Programa Java que lee un número entero por teclado y obtiene y muestra por pantalla el doble y el triple de ese número.
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int numero;
+        System.out.println("Introduce un número entero:");
+        numero = sc.nextInt();
+        System.out.println("Número introducido: " + numero);
+        System.out.println("Doble de " + numero + " -> "+ 2*numero);
+        System.out.println("Triple de " + numero + " -> "+ 3*numero);
+        
+    }
+}
+
+
+2. Programa Java que lea un nombre y muestre por pantalla: “Buenos dias nombre_introducido”.
+ 
+import java.util.*;
+ public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String cadena;
+        System.out.println("Introduce un nombre: ");
+        cadena = sc.nextLine();
+        System.out.println("Buenos Días " + cadena);
+    }
+}
+
+TAREA ***
+Programa que calcula el área de un triángulo a partir de la longitud de sus lados.
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a,b,c,p;
+        System.out.print("Introduzca longitud del primer lado del triángulo: ");
+        a = sc.nextDouble();
+        System.out.print("Introduzca longitud del segundo lado del triángulo: ");
+        b = sc.nextDouble();
+        System.out.print("Introduzca longitud del tercer lado del triángulo: ");
+        c = sc.nextDouble();
+        p = (a+b+c)/2;
+    System.out.println("Area -> " +  Math.sqrt(p*(p-a)*(p-b)*(p-c)));
+    }
+}
+
+
+
+
+
+Ejercicios Básicos con Estructura Condicional
+
+1. Programa Java que muestre los números del 1 al 100 utilizando la instrucción while
+public class Main {
+    public static void main(String[] args) {
+         System.out.println("Numeros del 1 al 100: ");
+         int i=1;
+         while(i<=100) {
+                   System.out.println(i);
+                   i++;
+         }
+    }
+}
+
+
+3. Programa Java que muestre los números del 1 al 100 utilizando la instrucción for  
+public class CodigoMaestro {
+    public static void main(String[] args) {
+        System.out.println("Numeros del 1 al 100: ");
+        for(int i = 1; i<=100;i++)
+            System.out.println(i);
+    }
+}
+
+
+TAREA ***
+2. Programa Java que muestre los números del 1 al 100 utilizando la instrucción do..while
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+Ejercicios con Arrays
+
+1.  Guardar en un array los 5 primeros números pares
+import java.util.*;
+public class ArrayPares {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int i, cont = 2;
+
+        int[] pares = new int[6];
+
+            //Llenamos el array con números pares. Utilizamos un contador
+        //con valor inicial 2 y le sumamos dos en cada iteración. 
+        for (i = 0; i < pares.length; i++) {
+            pares[i] = cont;
+            cont += 2;
+        }
+         
+            //Mostrar el array
+        for (i = 0; i < pares.length; i++) {
+            System.out.println(pares[i]);
+        }
+    }
+}
+
+2. LLenar un array con números aleatorios
+public static int [] llenarArrayAleatorio(int desde, int hasta, int tam){
+        int[] numeros = new int[tam];
+        Random rnd = new Random();
+        for (int i = 0; i < numeros.length; i++) {
+            numeros[i] = rnd.nextInt(hasta - desde + 1) + desde;
+        }
+        return numeros;
+}
+
+
+TAREA
+3. Contar el número de elementos positivos, negativos y ceros en un array de 10 enteros.
+ // Contar el número de elementos positivos, negativos y ceros de un array de 10 elementos.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] numeros = new int[10];
+        int pos = 0, neg = 0, cero = 0; //contadores
+        int i;
+        
+//Leemos los valores por teclado y los guardamos en el array
+        System.out.println("Lectura de los elementos del array: ");
+        for (i = 0; i < numeros.length; i++) {
+            System.out.print("numeros[" + i + "]= ");
+            numeros[i] = sc.nextInt();
+        }
+        //se recorre el array para contar positivos, negativos y ceros
+        for (i = 0; i < numeros.length; i++) {
+            if (numeros[i] > 0) {
+                pos++;
+            } else if (numeros[i] < 0) {
+                neg++;
+            } else {
+                cero++;
+            }
+        }
+        //mostrar resultados
+        System.out.println("Positivos: " + pos);
+        System.out.println("Negativos: " + neg);
+        System.out.println("Ceros: " + cero);
+    }
+}
+
+
+
+ 

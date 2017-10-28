@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="txt_siguiente">Siguiente</string>
+    <string name="txt_atras">Atras</string>
+
+    <string name="txt_colores_iguales">Ejemplo pesos 1 cada uno</string>
+    <string name="txt_colores_variados">Ejemplo pesos variados</string>
+
+</resources>
