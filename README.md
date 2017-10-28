@@ -1,5 +1,7 @@
 # CursoAndroidFSW-Ago-Dic-2017
-CursoAndroidFSW-Ago-Dic-2017
+Impartido por:
+* Enrique Salas Rodríguez
+* Leonardo Daniel Padilla Reyes
 
 # Bienvenido al Curso de la Fabrica de software.
 Este curso consta de ocho sesiones.
